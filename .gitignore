@@ -19,3 +19,23 @@
 *.exe
 *.out
 *.app
+
+# Eclipse project files
+.project
+.cproject
+Debug
+Release
+Test
+
+# CMake created files
+CMakeFiles
+CMakeCache.txt
+*.cmake
+swatch_test
+## also ignore all the googletest code
+ext/gtest/*
+## but not the CMakeLists.txt
+!ext/gtest/CMakeLists.txt
+
+# files created by 'make test'
+Testing
