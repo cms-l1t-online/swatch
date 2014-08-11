@@ -109,6 +109,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named swatch_impl
+
+# Build rule for target.
+swatch_impl: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 swatch_impl
+.PHONY : swatch_impl
+
+# fast build rule for target.
+swatch_impl/fast:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/build
+.PHONY : swatch_impl/fast
+
+#=============================================================================
 # Target rules for targets named swatch_test
 
 # Build rule for target.
@@ -133,6 +146,259 @@ googletest: cmake_check_build_system
 googletest/fast:
 	$(MAKE) -f ext/gtest/CMakeFiles/googletest.dir/build.make ext/gtest/CMakeFiles/googletest.dir/build
 .PHONY : googletest/fast
+
+#=============================================================================
+# Target rules for targets named uhal
+
+# Build rule for target.
+uhal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 uhal
+.PHONY : uhal
+
+# fast build rule for target.
+uhal/fast:
+	$(MAKE) -f ext/uhal/CMakeFiles/uhal.dir/build.make ext/uhal/CMakeFiles/uhal.dir/build
+.PHONY : uhal/fast
+
+src/board/Board.o: src/board/Board.cpp.o
+.PHONY : src/board/Board.o
+
+# target to build an object file
+src/board/Board.cpp.o:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/board/Board.cpp.o
+.PHONY : src/board/Board.cpp.o
+
+src/board/Board.i: src/board/Board.cpp.i
+.PHONY : src/board/Board.i
+
+# target to preprocess a source file
+src/board/Board.cpp.i:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/board/Board.cpp.i
+.PHONY : src/board/Board.cpp.i
+
+src/board/Board.s: src/board/Board.cpp.s
+.PHONY : src/board/Board.s
+
+# target to generate assembly for a file
+src/board/Board.cpp.s:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/board/Board.cpp.s
+.PHONY : src/board/Board.cpp.s
+
+src/board/BoardFactory.o: src/board/BoardFactory.cpp.o
+.PHONY : src/board/BoardFactory.o
+
+# target to build an object file
+src/board/BoardFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/board/BoardFactory.cpp.o
+.PHONY : src/board/BoardFactory.cpp.o
+
+src/board/BoardFactory.i: src/board/BoardFactory.cpp.i
+.PHONY : src/board/BoardFactory.i
+
+# target to preprocess a source file
+src/board/BoardFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/board/BoardFactory.cpp.i
+.PHONY : src/board/BoardFactory.cpp.i
+
+src/board/BoardFactory.s: src/board/BoardFactory.cpp.s
+.PHONY : src/board/BoardFactory.s
+
+# target to generate assembly for a file
+src/board/BoardFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/board/BoardFactory.cpp.s
+.PHONY : src/board/BoardFactory.cpp.s
+
+src/board/CTP7Board.o: src/board/CTP7Board.cpp.o
+.PHONY : src/board/CTP7Board.o
+
+# target to build an object file
+src/board/CTP7Board.cpp.o:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/board/CTP7Board.cpp.o
+.PHONY : src/board/CTP7Board.cpp.o
+
+src/board/CTP7Board.i: src/board/CTP7Board.cpp.i
+.PHONY : src/board/CTP7Board.i
+
+# target to preprocess a source file
+src/board/CTP7Board.cpp.i:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/board/CTP7Board.cpp.i
+.PHONY : src/board/CTP7Board.cpp.i
+
+src/board/CTP7Board.s: src/board/CTP7Board.cpp.s
+.PHONY : src/board/CTP7Board.s
+
+# target to generate assembly for a file
+src/board/CTP7Board.cpp.s:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/board/CTP7Board.cpp.s
+.PHONY : src/board/CTP7Board.cpp.s
+
+src/board/MP7Board.o: src/board/MP7Board.cpp.o
+.PHONY : src/board/MP7Board.o
+
+# target to build an object file
+src/board/MP7Board.cpp.o:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/board/MP7Board.cpp.o
+.PHONY : src/board/MP7Board.cpp.o
+
+src/board/MP7Board.i: src/board/MP7Board.cpp.i
+.PHONY : src/board/MP7Board.i
+
+# target to preprocess a source file
+src/board/MP7Board.cpp.i:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/board/MP7Board.cpp.i
+.PHONY : src/board/MP7Board.cpp.i
+
+src/board/MP7Board.s: src/board/MP7Board.cpp.s
+.PHONY : src/board/MP7Board.s
+
+# target to generate assembly for a file
+src/board/MP7Board.cpp.s:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/board/MP7Board.cpp.s
+.PHONY : src/board/MP7Board.cpp.s
+
+src/board/MTF7Board.o: src/board/MTF7Board.cpp.o
+.PHONY : src/board/MTF7Board.o
+
+# target to build an object file
+src/board/MTF7Board.cpp.o:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/board/MTF7Board.cpp.o
+.PHONY : src/board/MTF7Board.cpp.o
+
+src/board/MTF7Board.i: src/board/MTF7Board.cpp.i
+.PHONY : src/board/MTF7Board.i
+
+# target to preprocess a source file
+src/board/MTF7Board.cpp.i:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/board/MTF7Board.cpp.i
+.PHONY : src/board/MTF7Board.cpp.i
+
+src/board/MTF7Board.s: src/board/MTF7Board.cpp.s
+.PHONY : src/board/MTF7Board.s
+
+# target to generate assembly for a file
+src/board/MTF7Board.cpp.s:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/board/MTF7Board.cpp.s
+.PHONY : src/board/MTF7Board.cpp.s
+
+src/core/Device.o: src/core/Device.cpp.o
+.PHONY : src/core/Device.o
+
+# target to build an object file
+src/core/Device.cpp.o:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/core/Device.cpp.o
+.PHONY : src/core/Device.cpp.o
+
+src/core/Device.i: src/core/Device.cpp.i
+.PHONY : src/core/Device.i
+
+# target to preprocess a source file
+src/core/Device.cpp.i:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/core/Device.cpp.i
+.PHONY : src/core/Device.cpp.i
+
+src/core/Device.s: src/core/Device.cpp.s
+.PHONY : src/core/Device.s
+
+# target to generate assembly for a file
+src/core/Device.cpp.s:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/core/Device.cpp.s
+.PHONY : src/core/Device.cpp.s
+
+src/core/Link.o: src/core/Link.cpp.o
+.PHONY : src/core/Link.o
+
+# target to build an object file
+src/core/Link.cpp.o:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/core/Link.cpp.o
+.PHONY : src/core/Link.cpp.o
+
+src/core/Link.i: src/core/Link.cpp.i
+.PHONY : src/core/Link.i
+
+# target to preprocess a source file
+src/core/Link.cpp.i:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/core/Link.cpp.i
+.PHONY : src/core/Link.cpp.i
+
+src/core/Link.s: src/core/Link.cpp.s
+.PHONY : src/core/Link.s
+
+# target to generate assembly for a file
+src/core/Link.cpp.s:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/core/Link.cpp.s
+.PHONY : src/core/Link.cpp.s
+
+src/core/Port.o: src/core/Port.cpp.o
+.PHONY : src/core/Port.o
+
+# target to build an object file
+src/core/Port.cpp.o:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/core/Port.cpp.o
+.PHONY : src/core/Port.cpp.o
+
+src/core/Port.i: src/core/Port.cpp.i
+.PHONY : src/core/Port.i
+
+# target to preprocess a source file
+src/core/Port.cpp.i:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/core/Port.cpp.i
+.PHONY : src/core/Port.cpp.i
+
+src/core/Port.s: src/core/Port.cpp.s
+.PHONY : src/core/Port.s
+
+# target to generate assembly for a file
+src/core/Port.cpp.s:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/core/Port.cpp.s
+.PHONY : src/core/Port.cpp.s
+
+src/core/exception.o: src/core/exception.cpp.o
+.PHONY : src/core/exception.o
+
+# target to build an object file
+src/core/exception.cpp.o:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/core/exception.cpp.o
+.PHONY : src/core/exception.cpp.o
+
+src/core/exception.i: src/core/exception.cpp.i
+.PHONY : src/core/exception.i
+
+# target to preprocess a source file
+src/core/exception.cpp.i:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/core/exception.cpp.i
+.PHONY : src/core/exception.cpp.i
+
+src/core/exception.s: src/core/exception.cpp.s
+.PHONY : src/core/exception.s
+
+# target to generate assembly for a file
+src/core/exception.cpp.s:
+	$(MAKE) -f CMakeFiles/swatch_impl.dir/build.make CMakeFiles/swatch_impl.dir/src/core/exception.cpp.s
+.PHONY : src/core/exception.cpp.s
+
+test/DeviceTest.o: test/DeviceTest.cpp.o
+.PHONY : test/DeviceTest.o
+
+# target to build an object file
+test/DeviceTest.cpp.o:
+	$(MAKE) -f CMakeFiles/swatch_test.dir/build.make CMakeFiles/swatch_test.dir/test/DeviceTest.cpp.o
+.PHONY : test/DeviceTest.cpp.o
+
+test/DeviceTest.i: test/DeviceTest.cpp.i
+.PHONY : test/DeviceTest.i
+
+# target to preprocess a source file
+test/DeviceTest.cpp.i:
+	$(MAKE) -f CMakeFiles/swatch_test.dir/build.make CMakeFiles/swatch_test.dir/test/DeviceTest.cpp.i
+.PHONY : test/DeviceTest.cpp.i
+
+test/DeviceTest.s: test/DeviceTest.cpp.s
+.PHONY : test/DeviceTest.s
+
+# target to generate assembly for a file
+test/DeviceTest.cpp.s:
+	$(MAKE) -f CMakeFiles/swatch_test.dir/build.make CMakeFiles/swatch_test.dir/test/DeviceTest.cpp.s
+.PHONY : test/DeviceTest.cpp.s
 
 test/DummyTest.o: test/DummyTest.cpp.o
 .PHONY : test/DummyTest.o
@@ -166,9 +432,41 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... swatch_impl"
 	@echo "... swatch_test"
 	@echo "... test"
 	@echo "... googletest"
+	@echo "... uhal"
+	@echo "... src/board/Board.o"
+	@echo "... src/board/Board.i"
+	@echo "... src/board/Board.s"
+	@echo "... src/board/BoardFactory.o"
+	@echo "... src/board/BoardFactory.i"
+	@echo "... src/board/BoardFactory.s"
+	@echo "... src/board/CTP7Board.o"
+	@echo "... src/board/CTP7Board.i"
+	@echo "... src/board/CTP7Board.s"
+	@echo "... src/board/MP7Board.o"
+	@echo "... src/board/MP7Board.i"
+	@echo "... src/board/MP7Board.s"
+	@echo "... src/board/MTF7Board.o"
+	@echo "... src/board/MTF7Board.i"
+	@echo "... src/board/MTF7Board.s"
+	@echo "... src/core/Device.o"
+	@echo "... src/core/Device.i"
+	@echo "... src/core/Device.s"
+	@echo "... src/core/Link.o"
+	@echo "... src/core/Link.i"
+	@echo "... src/core/Link.s"
+	@echo "... src/core/Port.o"
+	@echo "... src/core/Port.i"
+	@echo "... src/core/Port.s"
+	@echo "... src/core/exception.o"
+	@echo "... src/core/exception.i"
+	@echo "... src/core/exception.s"
+	@echo "... test/DeviceTest.o"
+	@echo "... test/DeviceTest.i"
+	@echo "... test/DeviceTest.s"
 	@echo "... test/DummyTest.o"
 	@echo "... test/DummyTest.i"
 	@echo "... test/DummyTest.s"
